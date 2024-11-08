@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - jsp_2
+  - jtw_2
+  - js_2
+  - jpmp_2
+  - jgl_2
+  - jwes_2
+  - jcc_2
+  - jo_2
+  - jcC_2_2
+  - jb1_2
+  - jb2_2
+  - jjb_2
+  - jh_2
+  - jl_2
+  - joss_2
+  - jfpf_2
+  - jeb_2
+  - jacs_2
+  - jrd_2
+  - js_2_2
+  - jwtp_2
+  - jra_2
+  - jl_3
+  - jrc_2
+  - jfgf_2
+  - jee_2
+  - jtb_2
+  - jw_2
+  - jh_3
+  - jsms_2
+  - jlsm_1
+  - jlsm_2
+  - jlsm_3
+  - jlsm_4
+  - jlsm_5
+  - jlsm_6
+  - jlsm_7
+  - jlsm_8
+  - jlsm_9
+  - jlsm_10
+  - jlsm_11
+  - jlsm_12
+  - jmc_1
+  - jmc_2
+  - jmc
+  - jmc_3
+  - jmg_1
+  - jmg_2
+  - jmg_3
+  - jms
+  - jfcu
+  - jc
+  - jsct
+  - jrm
+  - jlc
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
