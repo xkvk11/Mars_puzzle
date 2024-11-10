@@ -32,7 +32,7 @@ public class PlaceManager : MonoBehaviour
     {
         if (countText != null)
         {
-            countText.text = $"{count} / 25";
+            countText.text = $"{count} / 23";
         }
     }
 }
