@@ -36,7 +36,7 @@ public class Place : MonoBehaviour
             }
 
             // XRGrabInteractable 비활성화를 위한 Coroutine 시작
-            StartCoroutine(DisableXRGrabAfterDelay(other));
+            StartCoroutine(DisableXRGrabAfterDelay(other.gameObject));  // other.gameObject로 수정
 
             // PlaceManager에서 카운트 증가
             PlaceManager.Instance.IncrementCount();
