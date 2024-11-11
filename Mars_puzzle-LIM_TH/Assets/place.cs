@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -34,15 +35,23 @@ public class Place : MonoBehaviour
                 thisMeshRenderer.enabled = true;
             }
 
-            // XRGrabInteractable 비활성화
-            XRGrabInteractable grabInteractable = other.GetComponent<XRGrabInteractable>();
-            if (grabInteractable != null)
-            {
-                grabInteractable.enabled = false;
-            }
+            // XRGrabInteractable 비활성화를 위한 Coroutine 시작
+            StartCoroutine(DisableXRGrabAfterDelay(other.gameObject));  // other.gameObject로 수정
 
             // PlaceManager에서 카운트 증가
             PlaceManager.Instance.IncrementCount();
+        }
+    }
+
+    private IEnumerator DisableXRGrabAfterDelay(GameObject obj)
+    {
+        yield return new WaitForSeconds(1f); // 1초 대기
+
+        // XRGrabInteractable 비활성화
+        XRGrabInteractable grabInteractable = obj.GetComponent<XRGrabInteractable>();
+        if (grabInteractable != null)
+        {
+            grabInteractable.enabled = false;
         }
     }
 
