@@ -45,7 +45,7 @@ public class Place : MonoBehaviour
 
     private IEnumerator DisableXRGrabAfterDelay(GameObject obj)
     {
-        yield return new WaitForSeconds(1f); // 1초 대기
+        yield return new WaitForSeconds(2f); // 2초 대기
 
         // XRGrabInteractable 비활성화
         XRGrabInteractable grabInteractable = obj.GetComponent<XRGrabInteractable>();

@@ -1,5 +1,10 @@
 fileFormatVersion: 2
-guid: dc529aee9b442a443a8df5d5e7c2bbb9
+<<<<<<<< HEAD:Mars_puzzle-LIM_TH/Assets/EzTornado/tornadotest.unity.meta
+guid: 18c2be498cfed4c47bb3237268867eed
+========
+guid: 71dc6f7b460ecef4098120e646e31411
+folderAsset: yes
+>>>>>>>> LIM_TH_2:Mars_puzzle-LIM_TH/Assets/FPS.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
