@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4693825, g: 0.19594328, b: 0.14082982, a: 1}
+  m_IndirectSpecularColor: {r: 0.4693824, g: 0.19594327, b: 0.14082982, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10823,7 +10823,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Mars
 
-    Puzzle'
+    Construct '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: deea8da636a32a44da03d2167379ba3f, type: 2}
   m_sharedMaterial: {fileID: 809954702092708115, guid: deea8da636a32a44da03d2167379ba3f, type: 2}
