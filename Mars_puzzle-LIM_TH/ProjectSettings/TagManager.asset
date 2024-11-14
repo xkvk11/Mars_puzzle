@@ -22,6 +22,7 @@ TagManager:
   - jb2_2
   - jsp_2
   - Left Hand
+  - UI
   layers:
   - Default
   - TransparentFX

@@ -1946,7 +1946,7 @@ GameObject:
   - component: {fileID: 224692480}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1963,13 +1963,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 853097163}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 262144
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -2210,8 +2210,8 @@ Transform:
   m_GameObject: {fileID: 224692473}
   serializedVersion: 2
   m_LocalRotation: {x: 0.005919557, y: -0.73723894, z: -0.0035437136, w: -0.67559683}
-  m_LocalPosition: {x: -216.06056, y: 4.2194977, z: 77.12167}
-  m_LocalScale: {x: 0.43566123, y: 0.002430612, z: 0.65466434}
+  m_LocalPosition: {x: -216.06, y: 4.2195, z: 77.116}
+  m_LocalScale: {x: 0.3599253, y: 0.002430612, z: 0.5467495}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 367295959}
@@ -8966,7 +8966,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 262144
   m_AttachTransform: {fileID: 373469690}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -14623,6 +14623,7 @@ GameObject:
   - component: {fileID: 1126820588}
   - component: {fileID: 1126820587}
   - component: {fileID: 1126820586}
+  - component: {fileID: 1126820593}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -14798,6 +14799,20 @@ Transform:
   - {fileID: 554159745}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1126820593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126820585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621e3c2fd81cac240b2070056b8567f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSound: {fileID: 8300000, guid: 511a91cf3889fed41acb19674e2554d1, type: 3}
+  minMoveDistance: 0.1
 --- !u!1001 &1133818391
 PrefabInstance:
   m_ObjectHideFlags: 0
