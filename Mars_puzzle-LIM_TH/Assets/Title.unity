@@ -11678,8 +11678,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC544\uB798\uC758 \uD0DC\uBE14\uB9BF\uC744 \uC67C\uCABD \uCEE8\uD2B8\uB864\uB7EC\uC5D0
-    \uBD80\uCC29\uD558\uC138\uC694!"
+  m_text: "\uC544\uB798\uC758 \uD0DC\uBE14\uB9BF\uC744 \uC67C\uCABD \uCEE8\uD2B8\uB864\uB7EC\uB97C
+    \uC774\uC6A9\uD574 \uC9D1\uC5B4 \uBD80\uCC29\uD558\uC138\uC694!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: deea8da636a32a44da03d2167379ba3f, type: 2}
   m_sharedMaterial: {fileID: 809954702092708115, guid: deea8da636a32a44da03d2167379ba3f, type: 2}
