@@ -13,6 +13,7 @@ public class PlaceManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            UpdateCountText(); // 초기 텍스트 설정
         }
         else
         {
@@ -32,7 +33,8 @@ public class PlaceManager : MonoBehaviour
     {
         if (countText != null)
         {
-            countText.text = $"{count} / 25";
+            // 두 자리 형식으로 표시 (예: 00, 01, 02, ...)
+            countText.text = $"{count.ToString("D2")} / 25";
         }
     }
 }
