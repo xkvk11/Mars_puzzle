@@ -23,6 +23,7 @@ TagManager:
   - jsp_2
   - Left Hand
   - UI
+  - jlsm_3
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Water
   - UI
   - Post Process
-  - 
+  - Minimap
   - 
   - 
   - 
