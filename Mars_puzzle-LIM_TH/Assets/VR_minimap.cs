@@ -8,13 +8,13 @@ public class VRMinimap : MonoBehaviour
    public class PlayerMarkerSettings
    {
        public GameObject markerPrefab;
-       public Color markerColor = Color.red;
+       public Color markerColor = Color.green;
        [Range(1f, 50f)]
        public float markerSize = 10f;
    }
 
    [Header("References")]
-   [SerializeField] private Transform player;           
+    [SerializeField] private Transform xrOrigin; // XR Origin을 추가     
    [SerializeField] private Camera minimapCamera;       
    [SerializeField] private RawImage minimapDisplay;    
    [SerializeField] private Button zoomInButton;        
@@ -54,12 +54,13 @@ public class VRMinimap : MonoBehaviour
 
    bool CheckComponents()
    {
-       if (player == null)
+       if (xrOrigin == null)
        {
-           Debug.LogError("Player Transform이 설정되지 않았습니다!");
-           enabled = false;
-           return false;
-       }
+            Debug.LogError("XR Origin이 설정되지 않았습니다!");
+            enabled = false;
+            return false;
+        }
+
 
        if (minimapCamera == null)
        {
@@ -197,39 +198,41 @@ public class VRMinimap : MonoBehaviour
    }
 
    void UpdateMinimapPosition()
-   {
-       Vector3 targetPosition = player.position;
-       targetPosition.y += minimapHeight;
+        {
+            Vector3 targetPosition = xrOrigin.position; // XR Origin의 위치 사용
+            targetPosition.y += minimapHeight;
 
-       Vector3 forward = Vector3.ProjectOnPlane(vrCamera.forward, Vector3.up).normalized;
-       Vector3 offset = forward * minimapDistance;
+            Vector3 forward = Vector3.ProjectOnPlane(vrCamera.forward, Vector3.up).normalized;
+            Vector3 offset = forward * minimapDistance;
 
-       transform.position = targetPosition + offset;
-       transform.rotation = Quaternion.LookRotation(-forward, Vector3.up);
+            transform.position = targetPosition + offset;
+            transform.rotation = Quaternion.LookRotation(-forward, Vector3.up);
 
-       minimapCamera.transform.position = new Vector3(
-           player.position.x,
-           player.position.y + minimapSize,
-           player.position.z
-       );
-   }
+            minimapCamera.transform.position = new Vector3(
+                xrOrigin.position.x, 
+                xrOrigin.position.y + minimapSize, 
+                xrOrigin.position.z
+            );
+        }
+
 
    void UpdatePlayerMarker()
-   {
-       if (playerMarker != null)
-       {
-           Vector3 viewportPoint = minimapCamera.WorldToViewportPoint(player.position);
-           
-           RectTransform markerRect = playerMarker.GetComponent<RectTransform>();
-           RectTransform minimapRect = minimapDisplay.GetComponent<RectTransform>();
+    {
+        if (playerMarker != null)
+        {
+            Vector3 viewportPoint = minimapCamera.WorldToViewportPoint(xrOrigin.position); // XR Origin 위치 사용
 
-           float x = (viewportPoint.x * minimapRect.rect.width) - (minimapRect.rect.width * 0.5f);
-           float y = (viewportPoint.y * minimapRect.rect.height) - (minimapRect.rect.height * 0.5f);
-           
-           markerRect.anchoredPosition = new Vector2(x, y);
-           markerRect.rotation = Quaternion.Euler(0, 0, -player.eulerAngles.y);
-       }
-   }
+            RectTransform markerRect = playerMarker.GetComponent<RectTransform>();
+            RectTransform minimapRect = minimapDisplay.GetComponent<RectTransform>();
+
+            float x = (viewportPoint.x * minimapRect.rect.width) - (minimapRect.rect.width * 0.5f);
+            float y = (viewportPoint.y * minimapRect.rect.height) - (minimapRect.rect.height * 0.5f);
+
+            markerRect.anchoredPosition = new Vector2(x, y);
+            markerRect.rotation = Quaternion.Euler(0, 0, -xrOrigin.eulerAngles.y);
+        }
+    }
+
 
    void OnDestroy()
    {
