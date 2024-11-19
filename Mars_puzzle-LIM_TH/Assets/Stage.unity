@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2063377684}
-  m_IndirectSpecularColor: {r: 0.4693824, g: 0.19594327, b: 0.14082982, a: 1}
+  m_IndirectSpecularColor: {r: 0.4693825, g: 0.19594328, b: 0.14082982, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -49359,22 +49359,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb99792b0be2d3b45ab771230a76a912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrOrigin: {fileID: 1988419142}
+  player: {fileID: 1988419142}
   minimapCamera: {fileID: 772323683}
   minimapDisplay: {fileID: 1855718119}
+  playerIndicator: {fileID: 0}
   zoomInButton: {fileID: 524708824}
   zoomOutButton: {fileID: 5390156}
-  playerMarkerSettings:
-    markerPrefab: {fileID: 8954641552700627607, guid: f89cdd6f1ea247f418ea3ba2bd86fbbe, type: 3}
-    markerColor: {r: 0, g: 1, b: 0, a: 1}
-    markerSize: 34.9
   minimapSize: 100
   minimapDistance: 0.5
   minimapHeight: -0.3
-  zoomSpeed: 10
+  minimapResolution: {x: 512, y: 512}
+  zoomStep: 10
   minZoom: 10
   maxZoom: 200
-  minimapResolution: {x: 512, y: 512}
 --- !u!4 &1234226842
 Transform:
   m_ObjectHideFlags: 0
