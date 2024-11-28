@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - jc4_2
+  - jc1_2
+  - js_2
+  - jpmp_2
+  - jgl_2
+  - jcC_2
+  - jb1_2
+  - jwes_2
+  - jc2_2
+  - jc_2
+  - jcc1_2
+  - jl_2
+  - jws_2
+  - jh_2
+  - jjb_2
+  - jb2_2
+  - jsp_2
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Post Process
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
